@@ -1,42 +1,117 @@
 <!DOCTYPE html>
-<html lang="portuguese">
+<html lang="en">
 <head>
-    <title>ORGEEZER</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
     <style>
-        h1{
-            font-size: 100px ;
-            font-family: Verdana, Geneva, Tahoma, sans-serif ;
-            text-align: center;
+        tr, td{
+            border: 2px solid ;
+            background-color: aqua;
         }
-        dd{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
-            color: white;
+        td{
+            padding: 25px 25px 25px;
+            align-items: center;
         }
-        dt{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
-            color: white;
+        table{
+            margin: 300px;
+            border: 5px solid;
         }
+         td[colspan="3"] {
+            text-align: center; /* Centraliza o texto horizontalmente */
+            vertical-align: middle; /* Centraliza o texto verticalmente */
+        }
+        body{
+            background-color: rgb(41, 37, 37);
+           /** background-image: url('fundo.webp');
+            background-size: cover; /* Redimensiona a imagem para cobrir toda a área */
+            /**background-repeat: no-repeat; /* Evita a repetição da imagem */
+        }
+        
     </style>
 </head>
-<body bgcolor="black">
-    <br><br><br><br><br><br><br><br><br>
-    <h1 style="color: blueviolet;">ORGEEZER</h1>
-    <br>
-    <br>
-    <br>
-    <img src="objetivo.png" alt="você é curioso hein cuzão">
-    <dl>
-        <dt>Objetivos</dt>
-        <dd>O intuito do nosso site é proporcionar a todos os nossos usuários a possibilidade  <br>
-            de organizar suas finanças e ter uma vida financeira mais tranquila e longe         <br>
-            de dívidas! Defendemos que quem tem que trabalhar para você é o dinheiro,         <br>
-            não o contrário. Junte-se a nós e embarque nesse mundo dos investimentos</dd>
-    </dl>
+<body>
+    <table>
+        <tr>
+            <td colspan="3">Irmão 1</td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>Luna</td>
+            <td>Maia</td>
+        </tr>
+         <tr>
+            <td colspan="3">Irmão 2</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>Luna</td>
+            <td>Maia</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="3">Grupo A</td>
+        </tr>
+        <tr>
+            <td>Palmeiras 0</td>
+            <td>Novorizontino</td>
+        </tr>
+         <tr>
+            <td colspan="3">Grupo B</td>
+        </tr>
+        <tr>
+            <td>Santos 0</td>
+            <td>Bragantino 1</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td rowspan="4">Grupo A</td>
+            <td>Japão</td>
+        </tr>
+        <tr>
+            <td>Croácia</td>
+        </tr>
+        <tr>
+            <td>Japão</td>
+        </tr>
+        <tr>
+            <td>Austrália</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td rowspan="4">3o Ano</td>
+            <td>Quirino</td>
+        </tr>
+        <tr>
+            <td>Motta</td>
+        </tr>
+        <tr>
+            <td>Luk</td>
+        </tr>
+        <tr>
+            <td>Latorre</td>
+        </tr>
+        <tr>
+            <td rowspan="4">4o Ano</td>
+            <td>PDS</td>
+        </tr>
+        <tr>
+            <td>AW2</td>
+        </tr>
+        <tr>
+            <td>Segurança</td>
+        </tr>
+        <tr>
+            <td>GEI</td>
+        </tr>
+    </table>
 
 </body>
 </html>
