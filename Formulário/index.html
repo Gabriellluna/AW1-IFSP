@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        #bot{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Turma 313</h1>
+
+    Nome: <input id="nome "type="text">
+    <br>
+    <br>
+    Senha: <input type="password"><br>
+    <input type="radio" value="AW1"><br>
+    <input type="radio" value="LP3"><br>
+    <input type="radio" value="LP2">
+
+    <br><br>
+    <select name="profs" id="profs" multiple>              
+    <option value="Clau">Clau</option>
+    <option value="Luk">Luk</option>
+     <option value="Quirino">Quirino</option>
+      <option value="Motta">Motta</option>
+    </select>
+
+    <div id="prent">Nome</div>
+
+
+     <input type="button" id="button" value="Enviar" onclick="Enviar()">
+     <br><br><br>
+
+    <textarea name="Comentario" id="coment" cols="10" rows="5"></textarea>
+
+    <script>
+
+        function Enviar(){
+        var nome = window.document.getElementById("nome")
+        var name = nome.value
+        var apresentar = window.document.getElementById("prent")
+        
+        apresentar.innerHTML = name    
+        }
+
+        
+    </script>
+</body>
+</html>
