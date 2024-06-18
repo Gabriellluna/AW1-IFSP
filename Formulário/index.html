@@ -6,47 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-        #bot{
-            background-color: aqua;
+        header{
+            text-align: center;
+            background: linear-gradient(to right, #f0f0f0, #000000);
+            margin-bottom: 30px;
+            padding: 5px;
         }
+        #btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #6a6f74;
+            color: #000000;
+            border: 1px;
+            border-radius: 10%;
+            cursor:-webkit-zoom-in;
+            transition: transform 0.2s ease-out;
+        }
+        #btn:hover{
+            transform: scale(1.1);
+        }
+        p{
+            display: flex;
+            flex-direction: row; 
+            justify-content: flex-start; 
+            align-items: center;
+            align-content: space-around;
+        }
+       
     </style>
 </head>
 <body>
-    <h1>Turma 313</h1>
-
-    Nome: <input id="nome "type="text">
-    <br>
-    <br>
-    Senha: <input type="password"><br>
-    <input type="radio" value="AW1"><br>
-    <input type="radio" value="LP3"><br>
-    <input type="radio" value="LP2">
-
-    <br><br>
-    <select name="profs" id="profs" multiple>              
-    <option value="Clau">Clau</option>
-    <option value="Luk">Luk</option>
-     <option value="Quirino">Quirino</option>
-      <option value="Motta">Motta</option>
-    </select>
-
-    <div id="prent">Nome</div>
+    <header>
+    <h1 id="cadastro">Cadastro Estudante</h1>
+    </header>
+    
 
 
-     <input type="button" id="button" value="Enviar" onclick="Enviar()">
-     <br><br><br>
+    <form id="formulario" name="" method="" action="">
 
-    <textarea name="Comentario" id="coment" cols="10" rows="5"></textarea>
+        
+        <h2 id="titulo-form">Dados do Estudante</h2>
+        
+        <p><label for="nome">Nome:</label>
+          <input type="text" id="nome" maxlength="80" required/></p>
+      
+        <p><label for="sobre">Sobrenome:</label>
+          <input type="text" id="sobre" maxlength="80" required/></p>
+      
+        <p><label for="titulo">Prontuário:</label>
+          <input type="text" id="pront" maxlength="80" required/></p>
+        
+          <button type="submit" id="btn" onclick="Enviar()">Enviar</button>
+
+      </form>
+
+   
+<br><br><br>
+      <h1>Suas informaçoes: </h1>
+      <h3 id="nomee"> Nome</h3>
+      <h3 id="sobree"> Sobrenome</h3>
+      <h3 id="prontt"> Prontuário</h3>
+
+
+
+
+
 
     <script>
 
-        function Enviar(){
-        var nome = window.document.getElementById("nome")
-        var name = nome.value
-        var apresentar = window.document.getElementById("prent")
-        
-        apresentar.innerHTML = name    
+    function Enviar(){
+
+        if (valorDoNome !== " " && valordoSobre !== " " && valordoPront !== " "){
+
+            document.bgColor = "grey";
+            document.body.style.color = "white"
+            document.getElementById("btn").style.color = "white"
+            document.getElementById("nome");
+            document.getElementById("sobre");
+            document.getElementById("pront");
+            var valorDoNome = nome.value;
+            var valordoSobre = sobre.value;
+            var valordoPront = pront.value;
+            document.getElementById("nomee").innerHTML = valorDoNome
+            document.getElementById("sobree").innerHTML = valordoSobre
+            document.getElementById("prontt").innerHTML = valordoPront
+
+        }else{
+            alert("Todos os campos devem estar devidamente preenchidos")
         }
+        
+
+    }
+
+    
+
 
         
     </script>
