@@ -17,28 +17,29 @@
 </head>
 <header class="px-20 -x">BEM VINDO AO MEU SITE COM BASE DE DADOS</header>
 
-<body>
-    <div class="d-flex justify-center align-center ">
-        <section class="search-section">
-            <h1 class="f-40">Times do Brasil!!!!</h1>
-            <div class="gap-30 d-flex column space-between align-center">
-                <input class="input-type" type="text" placeholder="Digite o time que você deseja">
-                <button class="button-primary"><i class="runner"></i>Pesquisar</button>
-            </div>
-        </section>       
-    </div>
-    <div class="d-flex justify-center align-center ">
-    <section class="">
-        <h2>Times do Brasil!!!</h2>
-        <div class="time-info">
-          <h2>São Paulo Futebol Clube</h2>
-          <p style="text-align: justify;">O São Paulo Futebol Clube, também conhecido como Tricolor Paulista, é um dos maiores clubes de futebol do Brasil. Fundado em 1930, o São Paulo já conquistou diversos títulos importantes, tanto no cenário nacional quanto internacional. Com uma torcida apaixonada e um histórico de grandes jogadores, o São Paulo é um dos times mais populares do país e possui uma rivalidade histórica com outros grandes clubes brasileiros. O Morumbi, seu estádio, é um dos mais importantes do Brasil e já recebeu diversas partidas memoráveis.
-
-          </p>
+<body class="site-content">
+    <div class="flex-grow">
+        <div class="d-flex justify-center align-center ">
+            <section class="search-section">
+                <h1 class="f-40">Times do Brasil</h1>
+                <div class="gap-30 d-flex column space-between align-center">
+                    <input onfocus="limpar()"  id="input" class="input-type" type="text" placeholder="Digite o time que você deseja">
+                    <button onclick="pesquisar()" class="button-primary"><i class="runner"></i>Pesquisar</button>
+                </div>
+            </section>       
         </div>
-      </section>
+        <div id="section-response">
+        
+        </div>
     </div>
+    <!--<div class="bla">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>-->
 </body>
 
 <footer class="px-20 all-screen-x">Todos os direitos reservados a <a href="https://www.instagram.com/gabriellluna_/">Gabriel Luna Maia</a></footer>
+<script src="dados.js"></script>
+<script src="app.js"></script>
 </html>

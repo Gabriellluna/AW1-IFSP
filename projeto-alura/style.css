@@ -12,6 +12,9 @@
 body{
     text-align: center;
     background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -23,7 +26,7 @@ header{
 
 footer{
     background: #FFFFFF;
-    margin-bottom: -30px;
+    padding: 30px;
 }
 
 .px-20{
@@ -71,7 +74,7 @@ a{
 }
 
 .search-section{
-    padding: 100px 0 ;
+    padding: 60px 0;
 }
 
 .column{
@@ -172,13 +175,45 @@ a{
 .gap-30{
     gap: 30px;
 }
-
-.time-info {
-    margin-bottom: 20px; /* Espaçamento entre times */
-  }
   
-  .time-info h2 {
+.time-info h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px; /* Espaçamento entre título e parágrafo */
-  }
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.bla{
+    width: 600px;
+    height: 40px;
+    background: orange;
+    display: flex;
+}
+
+.bla div{
+    padding: 20px;
+    border: 1px solid salmon;
+    width: 100px;
+}
+
+.bla :first-child{
+    flex-grow: 1;
+}
+
+.description{
+    width: 80%;
+    padding: 0px 15px 30px 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+
+.team-container {
+    margin: 50px 0;
+    overflow-y: scroll;
+    height: 300px; /* Ajuste a altura conforme necessário */
+}
